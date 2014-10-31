@@ -2,7 +2,7 @@
 
 # Form implementation generated from reading ui file 'F:\zhaomengyi\myproject\pyqt4dev\visainstr\VisaMain.ui'
 #
-# Created: Mon Oct 27 21:46:25 2014
+# Created: Fri Oct 31 15:02:42 2014
 #      by: PyQt4 UI code generator 4.11.2
 #
 # WARNING! All changes made in this file will be lost!
@@ -30,7 +30,7 @@ class Ui_VisafindMainWindow(object):
         self.centralWidget = QtGui.QWidget(VisafindMainWindow)
         self.centralWidget.setObjectName(_fromUtf8("centralWidget"))
         self.visa_find_restab = QtGui.QTableWidget(self.centralWidget)
-        self.visa_find_restab.setGeometry(QtCore.QRect(10, 40, 421, 291))
+        self.visa_find_restab.setGeometry(QtCore.QRect(10, 40, 431, 231))
         self.visa_find_restab.setObjectName(_fromUtf8("visa_find_restab"))
         self.visa_find_restab.setColumnCount(4)
         self.visa_find_restab.setRowCount(5)
@@ -73,16 +73,16 @@ class Ui_VisafindMainWindow(object):
         self.videoPlayer.setGeometry(QtCore.QRect(80, 700, 300, 200))
         self.videoPlayer.setObjectName(_fromUtf8("videoPlayer"))
         self.interinfo_psh = QtGui.QPushButton(self.centralWidget)
-        self.interinfo_psh.setGeometry(QtCore.QRect(470, 130, 81, 23))
+        self.interinfo_psh.setGeometry(QtCore.QRect(470, 140, 81, 23))
         self.interinfo_psh.setObjectName(_fromUtf8("interinfo_psh"))
         self.interinfo_browser = QtGui.QTextBrowser(self.centralWidget)
-        self.interinfo_browser.setGeometry(QtCore.QRect(470, 160, 201, 141))
+        self.interinfo_browser.setGeometry(QtCore.QRect(470, 180, 201, 141))
         self.interinfo_browser.setObjectName(_fromUtf8("interinfo_browser"))
         self.label = QtGui.QLabel(self.centralWidget)
         self.label.setGeometry(QtCore.QRect(470, 70, 61, 16))
         self.label.setObjectName(_fromUtf8("label"))
         self.seladd_browser = QtGui.QTextBrowser(self.centralWidget)
-        self.seladd_browser.setGeometry(QtCore.QRect(470, 90, 201, 31))
+        self.seladd_browser.setGeometry(QtCore.QRect(470, 90, 201, 41))
         self.seladd_browser.setObjectName(_fromUtf8("seladd_browser"))
         VisafindMainWindow.setCentralWidget(self.centralWidget)
         self.menuBar = QtGui.QMenuBar(VisafindMainWindow)

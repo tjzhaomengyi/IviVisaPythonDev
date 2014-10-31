@@ -19,7 +19,6 @@ class VisaFindMainWindow(QMainWindow, Ui_VisafindMainWindow):
     """
     Class documentation goes here.
     """
-
     def __init__(self, parent = None):
         """
         Constructor
@@ -89,10 +88,19 @@ class VisaFindMainWindow(QMainWindow, Ui_VisafindMainWindow):
         Slot documentation goes here.
         """
         # TODO: not implemented yet
-        
-    
-       
-        
+        rm=visa.ResourceManager()
+        #取得地址信息并进行详细查询
+        queryadd=str(self.seladd_browser.toPlainText())
+        print "this is query add ", queryadd
+        if queryadd is not None:
+            openinstr = rm.open_resource(queryadd)
+            instrinfo=openinstr.query('*IDN?')
+            self.interinfo_browser.setText(instrinfo)
+            #if ret_value < 0:
+             #   QMessageBox.information(self,self.tr("Visa接口详细信息"),self.tr("visa接口信息错误!"))
+              #  return
+                
+            
         
     @pyqtSignature("QString")
     def on_visa_interface_combox_currentIndexChanged(self, p0):
